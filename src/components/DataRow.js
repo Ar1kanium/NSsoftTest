@@ -60,6 +60,8 @@ export default function DataRow (props) {
     }
   }
 
+  if (!noteState) return <></>
+
 
 
   return props.headers ? (
