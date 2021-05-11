@@ -1,24 +1,65 @@
-.App {
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  border-radius: 10px;
+  border-spacing: 0;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  }
+  th {
+  background: #65c5a8;
   color: white;
-}
+  text-shadow: 0 1px 1px #2D2020;
+  padding: 10px 20px;
+  }
+  th, td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+  }
+  th:first-child, td:first-child {
+  text-align: left;
+  }
+  th:first-child {
+  border-top-left-radius: 10px;
+  }
+  th:last-child {
+  border-top-right-radius: 10px;
+  border-right: none;
+  }
+  td {
+  padding: 10px 20px;
+  background: #F8E391;
+  }
+  tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+  }
+  tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+  }
+  tr td:last-child {
+  border-right: none;
+  }
+  button {
+    background: #65c5a8;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
+  }
 
-.App-intro {
-  font-size: large;
-}
+  button:hover {
+    background: #268f6f;
+    transition: 250ms;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #268f6f;
+    color: white;
+  }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  .bigBtn {
+    width: 320px;
+  }
+
+  .lastRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }

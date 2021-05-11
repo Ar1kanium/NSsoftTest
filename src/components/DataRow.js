@@ -73,7 +73,7 @@ export default function DataRow (props) {
           </td>)
       }
       )}
-      <td>
+      <td className='lastRow'>
         <button onClick={deleteData}>Удалить</button>
         <button onClick={onClickHandlerPost}>{rowState.btnText}</button>
       </td>

@@ -80,7 +80,7 @@ const onChangeHandler = (e) => {
   <>
     <div>
       <h2>Объекты</h2>
-      <table border='1'>
+      <table className='table'>
         <thead>
           <tr>
             <th>№</th>
@@ -95,7 +95,7 @@ const onChangeHandler = (e) => {
         <tr>
           <td></td>
             {headers.map((el, ind) => <td key={ind}><input name={`${el} new`} onChange={onChangeHandler}></input></td>)}
-          <td><button onClick={() => sendNewItem(newItem)}>Добавить новую запись</button></td>
+          <td><button className='bigBtn' onClick={() => sendNewItem(newItem)}>Добавить новую запись</button></td>
         </tr>
         </tbody>
       </table>
