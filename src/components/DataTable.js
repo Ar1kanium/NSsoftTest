@@ -100,7 +100,7 @@ const onChangeHandler = (e) => {
         </tbody>
       </table>
     </div>
-    <div>
+    {/* <div>
       <h2>Значения</h2>
       <table border='1'>
         <thead>
@@ -121,7 +121,7 @@ const onChangeHandler = (e) => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </div> */}
   </>
   )
   :(<>Загружаем данные</>)
